@@ -1,0 +1,115 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  position: relative;
+  height: 4rem;
+}
+
+/* .active {
+  background-color: red;
+} */
+
+/* .title {
+  color: blue;
+  justify-self: center;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.navInfo ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  /* justify-content: flex-end; */
+  /* justify-self: flex-end; */
+  /* justify-self: flex-end; */
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+.menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+
+@media (min-width: 769px) {
+  .title {
+    color: blue;
+    justify-self: center;
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    /* align-self: center; */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    position: absolute;
+    margin-left: 2rem;
+  }
+  .menu {
+    display: flex;
+  }
+
+  .open {
+    display: none;
+  }
+  nav {
+    /* display: none; */
+    position: absolute;
+    top: 60px;
+    /* bottom: 0; */
+    width: 100%;
+    display: block;
+    z-index: 1;
+  }
+
+  .navInfo ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgray;
+    padding: 1rem;
+    /* position: absolute; */
+    /* left: 0; */
+  }
+
+  .leftNav {
+    /* position: relative; */
+    /* bottom: 50px; */
+    /* background-color: red; */
+    top: 210px;
+    position: absolute;
+  }
+
+  .rightNav {
+    /* background-color: rgb(201, 201, 201); */
+  }
+
+  .navInfo ul li,
+  .navInfo ul input,
+  .navInfo ul a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; /* Add spacing between items */
+  }
+}

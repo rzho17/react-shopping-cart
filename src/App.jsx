@@ -1,9 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -14,6 +13,11 @@ function App() {
       <Navbar />
       <Main />
       <Footer />
+      {/* <Routes>
+        <Route to="/men" path={<Men />} />
+        <Route />
+        <Route />
+      </Routes> */}
     </>
   );
 }
