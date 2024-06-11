@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 export default function Footer() {
   return (
     <footer>
-      <div>
+      <div className={styles.info}>
         <h3>About ModishTee</h3>
         <h3>Help</h3>
         <h3>Account</h3>
