@@ -13,7 +13,7 @@ export default function Navbar() {
       {/* <input type="text" placeholder="Search" /> */}
       <nav
         className={`${styles.navInfo} ${styles.leftNav}  ${
-          menuOpen ? styles.open : "null"
+          menuOpen ? styles.open : ""
         }`}
       >
         <ul>

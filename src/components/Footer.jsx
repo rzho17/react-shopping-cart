@@ -6,6 +6,7 @@ export default function Footer() {
       <div className={styles.info}>
         <h3>About ModishTee</h3>
         <h3>Help</h3>
+        <h3>Careers</h3>
         <h3>Account</h3>
         <h3>E-Newsletter</h3>
       </div>

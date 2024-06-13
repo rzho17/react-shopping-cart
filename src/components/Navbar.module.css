@@ -25,6 +25,8 @@ header {
   display: flex;
   gap: 1rem;
   list-style: none;
+  margin: 0;
+
   /* justify-content: flex-end; */
   /* justify-self: flex-end; */
   /* justify-self: flex-end; */
@@ -70,15 +72,15 @@ header {
   }
 
   .open {
-    display: none;
+    display: block;
   }
   nav {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 60px;
     /* bottom: 0; */
     width: 100%;
-    display: block;
+    /* display: block; */
     z-index: 1;
   }
 

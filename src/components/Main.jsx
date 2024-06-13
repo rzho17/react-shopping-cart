@@ -1,9 +1,11 @@
 import reactLogo from "../assets/react.svg";
+import Hero from "./content/Hero";
 import { Outlet } from "react-router-dom";
 
 export default function Main() {
   return (
     <main>
+      <Hero />
       <div>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
