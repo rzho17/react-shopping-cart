@@ -1,11 +1,14 @@
 import reactLogo from "../assets/react.svg";
 import Hero from "./content/Hero";
+import ShopInfo from "./content/ShopInfo";
 import { Outlet } from "react-router-dom";
 
 export default function Main() {
   return (
     <main>
+      <Outlet />
       <Hero />
+      <ShopInfo />
       <div>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
@@ -47,7 +50,6 @@ export default function Main() {
         quae nemo placeat sit magni autem iste doloribus ea optio ab vel culpa
         repellendus tempore eius, quis laboriosam consequuntur. Maiores?
       </div>
-      <Outlet />
     </main>
   );
 }
