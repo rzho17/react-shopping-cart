@@ -14,7 +14,9 @@ section {
   grid-template-areas:
     "a  b "
     "a  b "
-    "a  c";
+    "a  c"
+    "head head"
+    "info info";
 
   /* gap: 1rem; */
   /* height: 25rem; */
@@ -62,6 +64,91 @@ section {
   flex: 1;
 }
 
+.shopInfo p {
+  text-align: left;
+}
+
+.shopInfo button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  color: black;
+  border: 1px solid;
+  background-color: transparent;
+}
+
+.header {
+  grid-area: head;
+}
+
+.infoContainer {
+  grid-area: info;
+}
+
 .img {
   width: 125px;
+}
+
+@media (min-width: 768px) {
+  .imgGrid {
+    display: grid;
+
+    /* grid-template-areas:
+      "head head head head"
+      "main main main main"
+      "main main main main"
+      "... ...  info info"; */
+    grid-template-areas:
+      "head head head"
+      "main img1 img2"
+      "main img1 img2"
+      "main info info";
+
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 1rem;
+    /* column-gap: 2rem 1rem 1rem; */
+  }
+
+  .header {
+    grid-area: head;
+  }
+  .imgGrid div:nth-of-type(1) {
+    grid-area: main;
+    margin-right: 2rem;
+  }
+
+  .imgGrid div:nth-of-type(2) {
+    grid-area: img1;
+    height: 90%;
+    width: 100%;
+    /* align-self: center; */
+  }
+  .imgGrid div:nth-of-type(3) {
+    grid-area: img2;
+    height: 90%;
+    align-self: flex-end;
+    margin: 0;
+    /* margin: 1rem 0rem 0rem 1.5rem; */
+  }
+
+  .infoContainer {
+    grid-area: info;
+    text-align: left;
+    width: 70%;
+  }
+
+  /*
+  .imgGrid {
+    grid-area: main;
+  } */
+  /* .imgGrid div:nth-of-type(1) {
+    grid-area: main;
+  }
+  .imgGrid div:nth-of-type(2) {
+    grid-area: img1;
+  }
+  .imgGrid div:nth-of-type(3) {
+    grid-area: img2;
+  } */
 }
