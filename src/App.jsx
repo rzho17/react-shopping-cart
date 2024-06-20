@@ -2,7 +2,8 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
+
 import "./App.css";
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
   return (
     <>
       <Navbar />
+
+      {/* <main>
+        <Outlet />
+      </main> */}
       <Main />
       <Footer />
       {/* <Routes>

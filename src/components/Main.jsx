@@ -1,6 +1,7 @@
 import reactLogo from "../assets/react.svg";
 import Hero from "./content/Hero";
 import ShopInfo from "./content/ShopInfo";
+import HotProducts from "./content/HotProducts";
 import { Outlet } from "react-router-dom";
 
 export default function Main() {
@@ -9,9 +10,12 @@ export default function Main() {
       <Outlet />
       <Hero />
       <ShopInfo />
+      <HotProducts />
+
       <div>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          testing area please replace after
+          {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
         </a>
       </div>
       <h1>Vite + React</h1>

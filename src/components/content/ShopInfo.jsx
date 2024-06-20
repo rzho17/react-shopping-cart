@@ -16,6 +16,7 @@ export default function ShopInfo() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <section className={styles.shopInfo}>
       <div className={styles.imgGrid}>
@@ -40,12 +41,14 @@ export default function ShopInfo() {
             className={styles.img}
           />
         </div>
-        <div className={styles.header}>
-          <h2>Your Style</h2>
-          <h2>Stay Modish</h2>
-        </div>
+        {width > 768 ? (
+          <div className={styles.header}>
+            <h2>Your Style</h2>
+            <h2>Stay Modish</h2>
+          </div>
+        ) : null}
         <div className={styles.infoContainer}>
-          {width > 768 ? <h3>Never Before Tees</h3> : null}
+          <h3>Never Before Tees</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
             eligendi repudiandae itaque, reiciendis quis iure pariatur. Rem
