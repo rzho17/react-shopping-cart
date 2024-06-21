@@ -1,13 +1,22 @@
 .product {
   width: max-content;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  padding: 1rem;
 }
 
 .product img {
-  width: 15rem;
+  width: 17.5rem;
 }
 
 .productInfo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.productInfo p {
+  text-align: left;
+  font-weight: bold;
+  /* text-align: center; */
 }
