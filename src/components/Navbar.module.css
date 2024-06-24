@@ -3,35 +3,44 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid;
   position: relative;
   height: 4rem;
 }
 
-/* .active {
-  background-color: red;
-} */
-
-/* .title {
-  color: blue;
-  justify-self: center;
-  position: absolute;
-
-  left: 50%;
-  transform: translateX(-50%);
-} */
+.title {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  margin: 0;
+}
 
 .navInfo ul {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
   margin: 0;
-
-  /* justify-content: flex-end; */
-  /* justify-self: flex-end; */
-  /* justify-self: flex-end; */
 }
 
+.navInfo ul a {
+  color: rgb(50, 50, 50);
+  font-size: 1.8rem;
+}
+
+ul input {
+  border: none;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  background-color: transparent;
+  background-image: url("../assets/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 1rem;
+  color: black;
+}
+
+ul input:focus {
+  outline: none;
+}
 .menu {
   display: none;
   position: absolute;
@@ -52,7 +61,6 @@ header {
 
 @media (min-width: 769px) {
   .title {
-    color: blue;
     justify-self: center;
     position: absolute;
 
@@ -62,10 +70,11 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .title {
     position: absolute;
-    margin-left: 2rem;
+    font-size: 3rem;
+    /* margin-left: 2rem; */
   }
   .menu {
     display: flex;
