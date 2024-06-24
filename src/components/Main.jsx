@@ -8,9 +8,21 @@ export default function Main() {
   return (
     <main>
       <Outlet />
-      <Hero />
+      <Hero
+        divName={"hero"}
+        img={"clarisse-meyer-hero.jpg"}
+        topText={"Wear"}
+        bottomText={"Modish"}
+      />
       <ShopInfo />
       <HotProducts />
+      <Hero
+        divName={"lowHero"}
+        img={"michael-demoya-low-hero.jpg"}
+        topText={"Hunt"}
+        bottomText={"Styles"}
+        hasBtn={true}
+      />
 
       <div>
         <a href="https://react.dev" target="_blank">

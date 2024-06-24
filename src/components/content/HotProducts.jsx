@@ -1,5 +1,6 @@
 import styles from "./HotProducts.module.css";
 import MiniProduct from "../utils/MiniProduct";
+import Button from "../utils/Button";
 import { useEffect, useState } from "react";
 
 export default function HotProducts() {
@@ -35,8 +36,8 @@ export default function HotProducts() {
   //   }
 
   return (
-    <section>
-      <h1>Hot Arrivals</h1>
+    <section className={styles.hotItemSection}>
+      <h2>Hot Arrivals</h2>
       <div className={styles.productContainer}>
         {loading === false ? (
           productData.slice(0, 8).map((item) => {
@@ -53,6 +54,7 @@ export default function HotProducts() {
           <div>Loading Products</div>
         )}
       </div>
+      <Button text={"See All"} />
     </section>
   );
 }
