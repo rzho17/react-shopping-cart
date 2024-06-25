@@ -16,7 +16,8 @@ function App() {
       {/* <main>
         <Outlet />
       </main> */}
-      <Main />
+      <Outlet />
+      {/* <Main /> */}
       <Footer />
       {/* <Routes>
         <Route to="/men" path={<Men />} />

@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 export default function Main() {
   return (
     <main>
-      <Outlet />
+      {/* <Outlet /> */}
       <Hero
         divName={"hero"}
         img={"clarisse-meyer-hero.jpg"}

@@ -29,7 +29,10 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <h1 className={styles.title}>ModishTee</h1>
+      <Link to="/main" className={styles.headLink}>
+        <h1 className={styles.title}>ModishTee</h1>
+      </Link>
+      {/* <h1 className={styles.title}>ModishTee</h1> */}
 
       <nav
         className={`${styles.navInfo} ${styles.rightNav}  ${
