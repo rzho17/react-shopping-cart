@@ -29,7 +29,7 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <Link to="/main" className={styles.headLink}>
+      <Link to="/" className={styles.headLink}>
         <h1 className={styles.title}>ModishTee</h1>
       </Link>
       {/* <h1 className={styles.title}>ModishTee</h1> */}

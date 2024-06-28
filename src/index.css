@@ -24,6 +24,9 @@
   font-family: "Anton", sans-serif;
 }
 
+p {
+  font-family: "Courier New", Courier, monospace;
+}
 a {
   font-weight: 500;
   color: #646cff;

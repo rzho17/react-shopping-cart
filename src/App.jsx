@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import ProductPage from "./components/content/ProductPage";
 import { Routes, Route, Outlet } from "react-router-dom";
 
 import "./App.css";
@@ -13,17 +14,9 @@ function App() {
     <>
       <Navbar />
 
-      {/* <main>
-        <Outlet />
-      </main> */}
-      <Outlet />
-      {/* <Main /> */}
+      <ProductPage />
+      {/* <Outlet /> */}
       <Footer />
-      {/* <Routes>
-        <Route to="/men" path={<Men />} />
-        <Route />
-        <Route />
-      </Routes> */}
     </>
   );
 }

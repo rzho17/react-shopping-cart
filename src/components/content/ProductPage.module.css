@@ -1,0 +1,153 @@
+.mainImg {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  border: 1px solid;
+}
+
+.smallImgContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.img {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  border: 1px solid;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.infoContainer h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.infoContainer h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.quantityContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0 1rem;
+  border: 1px solid black;
+  font-family: "Courier New", Courier, monospace;
+  /* background-color: aliceblue; */
+}
+
+.quantityContainer div {
+  font-size: 2rem;
+}
+
+.qtnBtn {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 2.5rem;
+  padding: 0 1.5rem;
+  width: 3rem;
+  background-color: transparent;
+  border: 0;
+}
+
+.infoContainer .add {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  background-color: rgb(47, 230, 53);
+  border: none;
+
+  margin-bottom: 2rem;
+}
+
+.shippingInfo {
+  align-items: flex-end;
+}
+
+.deliveryContainer {
+  display: grid;
+  grid-template-columns: 1rem 2fr;
+  grid-template-areas:
+    "img img"
+    "... div";
+  gap: 1.5rem;
+  row-gap: 0;
+  text-align: left;
+  border: 1px solid rgb(216, 216, 216);
+  padding-top: 1rem;
+  width: 100%;
+  height: 8rem;
+
+  /* padding-right: 5rem; */
+  /* margin: 1rem 0; */
+  /* margin-bottom: 1rem; */
+}
+
+.deliveryContainer div {
+  display: flex;
+  align-items: center;
+  grid-area: img;
+}
+
+.deliveryContainer p {
+  grid-area: div;
+  margin-top: 0;
+}
+
+.deliveryContainer h4 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .productContainer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+
+    margin-top: 2rem;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mainImg {
+    flex: 1;
+  }
+
+  .img {
+    margin: 0;
+  }
+
+  .infoContainer {
+    margin: 0;
+    justify-content: space-between;
+
+    align-items: normal;
+  }
+
+  .infoContainer h2 {
+    font-size: 3.5rem;
+  }
+  .infoContainer h3 {
+    font-size: 3.5rem;
+  }
+  .shippingInfo p {
+    margin: 0;
+  }
+}
