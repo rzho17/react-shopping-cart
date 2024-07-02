@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import ProductPage from "./components/content/ProductPage";
+import Cart from "./components/content/Cart";
 import { Routes, Route, Outlet } from "react-router-dom";
 
 import "./App.css";
@@ -13,8 +14,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <Cart />
+      {/* <ProductPage /> */}
 
-      <ProductPage />
       {/* <Outlet /> */}
       <Footer />
     </>
