@@ -10,7 +10,7 @@ export default function ProductGallery() {
     const fetchData = async () => {
       try {
         // setLoading(true);
-        const data = await fetch("./data/mens_data.json");
+        const data = await fetch("./data/unisex_data.json");
 
         const allData = await data.json();
         //   console.log(allData);
@@ -28,8 +28,8 @@ export default function ProductGallery() {
     fetchData();
   }, []);
   return (
-    <div>
-      <h2>Hello i am product gallery</h2>
+    <div className={styles.productGallery}>
+      <h2>Men's Selection</h2>
 
       <div className={styles.galleryContainer}>
         {loading === false ? (
@@ -40,6 +40,7 @@ export default function ProductGallery() {
                 img={item.mainImg}
                 name={item.name}
                 price={item.price}
+                container={styles.galleryProduct}
               />
             );
           })

@@ -1,4 +1,37 @@
 .galleryContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.productGallery h2 {
+  text-align: left;
+  font-size: 2rem;
+}
+.galleryProduct {
+  padding: 0;
+  /* padding: 1rem; */
+  width: 100%;
+}
+.galleryProduct img {
+  /* width: 5rem; */
+  width: 100%;
+}
+
+.galleryContainer .productInfo {
+  margin: 10rem;
+}
+
+@media (min-width: 768px) {
+  .galleryContainer {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .galleryContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
 }
