@@ -1,12 +1,16 @@
 import styles from "./ProductPage.module.css";
 import Button from "../utils/Button";
 import DeliveryInfo from "../utils/DeliveryInfo";
+import { useLocation } from "react-router-dom";
 
 export default function ProductPage() {
+  const location = useLocation();
+  const { img, name, price, func } = location.state || {};
+
   return (
     <div className={styles.productContainer}>
       <div className={styles.imgContainer}>
-        <img src="../src/assets/react.svg" alt="" className={styles.mainImg} />
+        <img src={img} alt="" className={styles.mainImg} />
         <div className={styles.smallImgContainer}>
           <img src="../src/assets/react.svg" alt="" className={styles.img} />
           <img src="../src/assets/react.svg" alt="" className={styles.img} />

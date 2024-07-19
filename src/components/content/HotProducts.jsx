@@ -2,6 +2,7 @@ import styles from "./HotProducts.module.css";
 import MiniProduct from "../utils/MiniProduct";
 import Button from "../utils/Button";
 import { useEffect, useState } from "react";
+import { Link, Route, Routes } from "react-router-dom";
 
 export default function HotProducts() {
   const [productData, setProductData] = useState();
@@ -11,7 +12,7 @@ export default function HotProducts() {
     const fetchData = async () => {
       try {
         // setLoading(true);
-        const data = await fetch("/data/MOCK_DATA.json");
+        const data = await fetch("/data/unisex_data.json");
 
         const allData = await data.json();
         //   console.log(allData);
@@ -44,8 +45,8 @@ export default function HotProducts() {
             return (
               <MiniProduct
                 key={item.id}
-                img={item.image}
-                name={item.title}
+                img={item.mainImg}
+                name={item.name}
                 price={item.price}
               />
             );

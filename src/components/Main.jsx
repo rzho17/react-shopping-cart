@@ -23,6 +23,7 @@ export default function Main() {
         bottomText={"Styles"}
         hasBtn={true}
       />
+      <Outlet></Outlet>
 
       <div>
         <a href="https://react.dev" target="_blank">

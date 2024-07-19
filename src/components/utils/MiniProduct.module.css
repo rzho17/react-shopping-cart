@@ -24,3 +24,7 @@
   font-weight: bold;
   /* text-align: center; */
 }
+
+.product:hover {
+  cursor: pointer;
+}
