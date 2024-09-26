@@ -5,30 +5,54 @@ import { useLocation } from "react-router-dom";
 
 export default function ProductPage() {
   const location = useLocation();
-  const { img, name, price, func } = location.state || {};
+  const { item, img, name, price, func } = location.state || {};
+
+  const changeImg = (src, name) => {
+    console.log(name);
+    const img = document.querySelector(`.${styles.mainImg}`);
+    const smallImg = document.querySelector(`.${name}`);
+    const temp = img.src;
+    smallImg.src = temp;
+    img.src = src;
+  };
 
   return (
     <div className={styles.productContainer}>
       <div className={styles.imgContainer}>
-        <img src={img} alt="" className={styles.mainImg} />
+        <img src={item.mainImg} alt="" className={styles.mainImg} />
         <div className={styles.smallImgContainer}>
-          <img src="../src/assets/react.svg" alt="" className={styles.img} />
-          <img src="../src/assets/react.svg" alt="" className={styles.img} />
-          <img src="../src/assets/react.svg" alt="" className={styles.img} />
-          <img src="../src/assets/react.svg" alt="" className={styles.img} />
+          <img
+            src={item.subImg1}
+            alt=""
+            className={`${styles.img} img1`}
+            onClick={(evt) => changeImg(evt.target.src, "img1")}
+          />
+          <img
+            src={item.subImg2}
+            alt=""
+            className={`${styles.img} img2`}
+            onClick={(evt) => changeImg(evt.target.src, "img2")}
+          />
+          <img
+            src={item.subImg3}
+            alt=""
+            className={`${styles.img} img3`}
+            onClick={(evt) => changeImg(evt.target.src, "img3")}
+          />
+          <img
+            src={item.subImg4}
+            alt=""
+            className={`${styles.img} img4`}
+            onClick={(evt) => changeImg(evt.target.src, "img4")}
+          />
         </div>
       </div>
 
       <div className={styles.infoContainer}>
-        <h2>STAR WARS SHORT SLEEVE UT</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at
-          veniam accusamus aspernatur magni eos numquam, obcaecati hic
-          laboriosam. Quibusdam laudantium iste, quis fugit facere possimus
-          porro unde optio soluta.
-        </p>
+        <h2>{item.name}</h2>
+        <p>{item.description}</p>
 
-        <h3>$29.99</h3>
+        <h3>${item.price}9</h3>
         <div className={styles.quantityContainer}>
           <Button text={"-"} name={styles.qtnBtn} />
           <div>1</div>

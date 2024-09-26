@@ -10,7 +10,7 @@ export default function ProductGallery() {
     const fetchData = async () => {
       try {
         // setLoading(true);
-        const data = await fetch("./data/unisex_data.json");
+        const data = await fetch("./data/mens_data.json");
 
         const allData = await data.json();
         //   console.log(allData);
@@ -36,11 +36,12 @@ export default function ProductGallery() {
           productData.map((item) => {
             return (
               <MiniProduct
-                // key={item.id}
+                key={item.id}
                 img={item.mainImg}
                 name={item.name}
                 price={item.price}
                 container={styles.galleryProduct}
+                item={item}
               />
             );
           })

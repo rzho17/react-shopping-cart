@@ -48,6 +48,7 @@ export default function HotProducts() {
                 img={item.mainImg}
                 name={item.name}
                 price={item.price}
+                item={item}
               />
             );
           })
