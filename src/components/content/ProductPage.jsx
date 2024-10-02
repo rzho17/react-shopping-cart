@@ -2,6 +2,7 @@ import styles from "./ProductPage.module.css";
 import Button from "../utils/Button";
 import DeliveryInfo from "../utils/DeliveryInfo";
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 export default function ProductPage() {
   const location = useLocation();
@@ -14,6 +15,18 @@ export default function ProductPage() {
     const temp = img.src;
     smallImg.src = temp;
     img.src = src;
+  };
+
+  const [itemQuantity, setItemQuantity] = useState(1);
+
+  const incQuantity = () => {
+    setItemQuantity((item) => item + 1);
+  };
+
+  const decQuantity = () => {
+    setItemQuantity((item) => {
+      return item > 1 ? item - 1 : item - 0;
+    });
   };
 
   return (
@@ -52,11 +65,11 @@ export default function ProductPage() {
         <h2>{item.name}</h2>
         <p>{item.description}</p>
 
-        <h3>${item.price}9</h3>
+        <h3>${item.price}</h3>
         <div className={styles.quantityContainer}>
-          <Button text={"-"} name={styles.qtnBtn} />
-          <div>1</div>
-          <Button text={"+"} name={styles.qtnBtn} />
+          <Button text={"-"} name={styles.qtnBtn} func={decQuantity} />
+          <div>{itemQuantity}</div>
+          <Button text={"+"} name={styles.qtnBtn} func={incQuantity} />
         </div>
 
         <Button text={"Add to Cart"} name={styles.add} />

@@ -22,7 +22,7 @@ export default function MiniProduct({
       <img src={img} alt="" onClick={func} />
       <div className={styles.productInfo}>
         <p>{name}</p>
-        <p>${price}9</p>
+        <p>${price}</p>
       </div>
     </Link>
   );
