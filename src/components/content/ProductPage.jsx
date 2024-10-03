@@ -29,6 +29,14 @@ export default function ProductPage() {
     });
   };
 
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const limit = 200;
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <div className={styles.productContainer}>
       <div className={styles.imgContainer}>
@@ -63,7 +71,18 @@ export default function ProductPage() {
 
       <div className={styles.infoContainer}>
         <h2>{item.name}</h2>
-        <p>{item.description}</p>
+        {/* <p>{item.description}</p> */}
+        <p>
+          {isExpanded
+            ? item.description
+            : `${item.description.slice(0, limit)}...`}
+        </p>
+        {item.description.length > limit && (
+          <Button
+            func={toggleReadMore}
+            text={isExpanded ? "Read Less" : "Read More"}
+          ></Button>
+        )}
 
         <h3>${item.price}</h3>
         <div className={styles.quantityContainer}>
