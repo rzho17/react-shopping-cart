@@ -80,7 +80,8 @@ export default function ProductPage() {
         {item.description.length > limit && (
           <Button
             func={toggleReadMore}
-            text={isExpanded ? "Read Less" : "Read More"}
+            text={isExpanded ? "Less" : "More"}
+            name={styles.read}
           ></Button>
         )}
 

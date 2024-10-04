@@ -101,7 +101,7 @@ ul input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent;
+    background-color: white;
     backdrop-filter: blur(50px);
     /* border-radius: 10px; */
     padding: 1rem;
@@ -139,6 +139,11 @@ ul input:focus {
     display: block;
     width: 100%;
     text-align: center;
-    margin-bottom: 10px; /* Add spacing between items */
+    /* margin-bottom: 10px;  */
+    /* Add spacing between items */
+  }
+
+  .navInfo:nth-of-type(1) {
+    margin-top: -17px;
   }
 }
