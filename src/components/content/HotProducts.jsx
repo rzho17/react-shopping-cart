@@ -35,7 +35,7 @@ export default function HotProducts() {
   //   if (setLoading) {
   //     return <div>Loading</div>;
   //   }
-
+  console.log("product data", productData);
   return (
     <section className={styles.hotItemSection}>
       <h2>Hot Arrivals</h2>
@@ -44,7 +44,7 @@ export default function HotProducts() {
           productData.slice(0, 8).map((item) => {
             return (
               <MiniProduct
-                key={item.id}
+                key={item["web-scraper-order"]}
                 img={item.mainImg}
                 name={item.name}
                 price={item.price}

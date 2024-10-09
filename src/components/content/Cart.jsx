@@ -2,8 +2,12 @@ import styles from "./Cart.module.css";
 import QuantityBtn from "../utils/QuantityBtn";
 import Button from "../utils/Button";
 import CartItems from "../utils/CartItems";
+import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 
 export default function Cart() {
+  const [cartList, setCartList] = useOutletContext();
+
   return (
     <div className={styles.cartPage}>
       <h2>Your Cart</h2>
@@ -20,7 +24,7 @@ export default function Cart() {
         </div>
       )}
 
-      <CartItems />
+      <CartItems cartList={cartList} />
 
       {/* <div className={styles.cartContainer}>
         <img src="../src/assets/react.svg" alt="" />

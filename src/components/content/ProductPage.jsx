@@ -1,7 +1,7 @@
 import styles from "./ProductPage.module.css";
 import Button from "../utils/Button";
 import DeliveryInfo from "../utils/DeliveryInfo";
-import { useLocation } from "react-router-dom";
+import { useLocation, useOutletContext } from "react-router-dom";
 import { useState } from "react";
 
 export default function ProductPage() {
@@ -37,6 +37,54 @@ export default function ProductPage() {
     setIsExpanded(!isExpanded);
   };
 
+  const [cartList, setCartList] = useOutletContext();
+
+  const addCart = () => {
+    const obj = {
+      id: item["web-scraper-order"],
+      name: item.name,
+      img: item.mainImg,
+      price: item.price,
+      quantity: itemQuantity,
+    };
+
+    console.log(obj);
+
+    // setcartlist
+    // loop through cart items
+    // if the id of an item matches obj quantity
+    // update that items quantity
+    // if id is not found, we know its a new item
+    // add it the cart
+
+    setCartList((prevCart) => {
+      // Variable to track if the item already exists
+      let itemExists = false;
+
+      // Map through the previous cart to update quantities if necessary
+      const updatedCart = prevCart.map((cartItem) => {
+        if (cartItem.id === obj.id) {
+          itemExists = true; // Mark that the item exists
+          return { ...cartItem, quantity: itemQuantity }; // Update the quantity
+        }
+        return cartItem; // Return the unchanged cart item
+      });
+
+      // If the item did not exist, add the new object to the cart
+      if (!itemExists) {
+        return [...updatedCart, obj]; // Add the new item to the updated cart
+      }
+
+      return updatedCart; // Return the updated cart if the item existed
+    });
+
+    // setCartList((item) => {
+    //   item.push(obj);
+    //   return item;
+    // });
+
+    console.log(cartList);
+  };
   return (
     <div className={styles.productContainer}>
       <div className={styles.imgContainer}>
@@ -92,7 +140,7 @@ export default function ProductPage() {
           <Button text={"+"} name={styles.qtnBtn} func={incQuantity} />
         </div>
 
-        <Button text={"Add to Cart"} name={styles.add} />
+        <Button text={"Add to Cart"} name={styles.add} func={addCart} />
 
         <div className={styles.shippingInfo}>
           <DeliveryInfo

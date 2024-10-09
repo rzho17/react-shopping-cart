@@ -139,8 +139,6 @@ ul input:focus {
     display: block;
     width: 100%;
     text-align: center;
-    /* margin-bottom: 10px;  */
-    /* Add spacing between items */
   }
 
   .navInfo:nth-of-type(1) {

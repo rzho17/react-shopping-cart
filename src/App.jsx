@@ -15,6 +15,8 @@ function App() {
 
   const getProduct = (data, id) => {};
 
+  const [cartList, setCartList] = useState([]);
+
   return (
     <>
       <ScrollToTop />
@@ -24,7 +26,7 @@ function App() {
       {/* <ProductPage /> */}
       {/* <Main /> */}
 
-      <Outlet />
+      <Outlet context={[cartList, setCartList]} />
 
       <Footer />
     </>
