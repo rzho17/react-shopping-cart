@@ -5,6 +5,7 @@ import Men from "./components/pages/Men.jsx";
 import Women from "./components/pages/Women.jsx";
 import Kids from "./components/pages/Kids.jsx";
 import Main from "./components/Main.jsx";
+import Cart from "./components/content/Cart.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProductPage from "./components/content/ProductPage.jsx";
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/product",
         element: <ProductPage />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },

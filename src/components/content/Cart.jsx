@@ -8,6 +8,8 @@ import { useOutletContext } from "react-router-dom";
 export default function Cart() {
   const [cartList, setCartList] = useOutletContext();
 
+  console.log(cartList);
+
   return (
     <div className={styles.cartPage}>
       <h2>Your Cart</h2>

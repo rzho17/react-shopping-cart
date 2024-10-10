@@ -42,7 +42,7 @@ export default function Navbar() {
         <ul>
           <input type="text" placeholder="Search" />
           <Link>Shop</Link>
-          <Link>Cart</Link>
+          <Link to="/cart">Cart</Link>
         </ul>
       </nav>
       <div className={`${styles.menu} `} onClick={openMenu}>
