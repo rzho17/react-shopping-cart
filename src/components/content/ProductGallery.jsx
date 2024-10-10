@@ -30,7 +30,9 @@ export default function ProductGallery({ dataType }) {
   }, []);
   return (
     <div className={styles.productGallery}>
-      <h2>{dataType}s Selection</h2>
+      <h2>
+        {dataType.slice(0, 1).toUpperCase() + dataType.slice(1)}'s Selection
+      </h2>
 
       <div className={styles.galleryContainer}>
         {loading === false ? (
