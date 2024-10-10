@@ -1,9 +1,9 @@
+import ProductGallery from "../content/ProductGallery";
+
 export default function Men() {
   return (
     <>
-      {/* <Navbar /> */}
-      <div>Men</div>
-      {/* <Main>Men</Main> */}
+      <ProductGallery dataType="mens" />
     </>
   );
 }

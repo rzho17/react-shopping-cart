@@ -18,13 +18,19 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <NavLink to="/men">Men</NavLink>
+            <NavLink to="/men" onClick={openMenu}>
+              Men
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/women">Women</NavLink>
+            <NavLink to="/women" onClick={openMenu}>
+              Women
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/kids">Kids</NavLink>
+            <NavLink to="/kids" onClick={openMenu}>
+              Kids
+            </NavLink>
           </li>
         </ul>
       </nav>
@@ -41,8 +47,10 @@ export default function Navbar() {
       >
         <ul>
           <input type="text" placeholder="Search" />
-          <Link>Shop</Link>
-          <Link to="/cart">Cart</Link>
+          <Link onClick={openMenu}>Shop</Link>
+          <Link to="/cart" onClick={openMenu}>
+            Cart
+          </Link>
         </ul>
       </nav>
       <div className={`${styles.menu} `} onClick={openMenu}>

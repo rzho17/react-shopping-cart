@@ -2,7 +2,7 @@ import styles from "./ProductGallery.module.css";
 import MiniProduct from "../utils/MiniProduct";
 import { useState, useEffect } from "react";
 
-export default function ProductGallery() {
+export default function ProductGallery({ dataType }) {
   const [productData, setProductData] = useState();
   const [loading, setLoading] = useState(true);
 
@@ -10,7 +10,8 @@ export default function ProductGallery() {
     const fetchData = async () => {
       try {
         // setLoading(true);
-        const data = await fetch("./data/mens_data.json");
+        const data = await fetch(`./data/${dataType}_data.json`);
+        // const data = await fetch("./data/mens_data.json");
 
         const allData = await data.json();
         //   console.log(allData);
@@ -29,7 +30,7 @@ export default function ProductGallery() {
   }, []);
   return (
     <div className={styles.productGallery}>
-      <h2>Men's Selection</h2>
+      <h2>{dataType}s Selection</h2>
 
       <div className={styles.galleryContainer}>
         {loading === false ? (

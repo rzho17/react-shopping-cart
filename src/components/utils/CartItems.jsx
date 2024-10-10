@@ -2,8 +2,16 @@ import QuantityBtn from "./QuantityBtn";
 import styles from "../content/Cart.module.css";
 import Button from "./Button";
 
-export default function CartItems({ cartList }) {
+export default function CartItems({ cartList, setCartList }) {
   console.log("the current cart " + cartList);
+
+  // need state to remove cartlist
+  const remove = (id) => {
+    setCartList((list) => {
+      return list.filter((item) => item.id != id);
+    });
+  };
+
   return (
     // <div className={styles.cartContainer}>
     //   <img src={cartList.img} alt="" />
@@ -25,7 +33,11 @@ export default function CartItems({ cartList }) {
           {/* <QuantityBtn name={styles.qtnBtn} /> */}
           <p>${item.price * item.quantity}</p>
 
-          <Button name={styles.remove} text={"✕"}></Button>
+          <Button
+            name={styles.remove}
+            text={"✕"}
+            func={() => remove(item.id)}
+          ></Button>
         </div>
       );
     })

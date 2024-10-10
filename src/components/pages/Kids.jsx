@@ -1,8 +1,9 @@
+import ProductGallery from "../content/ProductGallery";
+
 export default function Kids() {
   return (
     <>
-      {/* <Navbar /> */}
-      <div>Kids</div> {/* <Main>Men</Main> */}
+      <ProductGallery dataType={"kids"} />
     </>
   );
 }
