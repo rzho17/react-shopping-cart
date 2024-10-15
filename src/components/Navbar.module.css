@@ -63,6 +63,36 @@ ul input:focus {
   border-radius: 0.2rem;
 }
 
+.searchContainer {
+  width: 100%;
+  /* border: 1px solid; */
+}
+.listResults {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.searchItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 10px;
+  text-align: left;
+}
+
+.searchItem img {
+  width: 5rem;
+}
+
+.searchItem .linkClick {
+  font-size: 1.25rem;
+  border: none;
+}
+
 @media (min-width: 769px) {
   .title {
     justify-self: center;

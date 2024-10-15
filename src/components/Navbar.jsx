@@ -1,8 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { useState } from "react";
+
+import { SearchBar } from "./utils/SearchBar";
+import SearchBarResults from "./utils/SearchBarResults";
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const [searchResults, setSearchResults] = useState([]);
+
+  const [input, setInput] = useState("");
 
   const openMenu = () => {
     setMenuOpen(!menuOpen);
@@ -46,6 +54,19 @@ export default function Navbar() {
         }`}
       >
         <ul>
+          <div className={styles.searchContainer}>
+            <SearchBar
+              setSearchResults={setSearchResults}
+              input={input}
+              setInput={setInput}
+            />
+            <SearchBarResults
+              searchResults={searchResults}
+              setMenuOpen={openMenu}
+              setInput={setInput}
+              setSearchResults={setSearchResults}
+            />
+          </div>
           <input type="text" placeholder="Search" />
           <Link onClick={openMenu}>Shop</Link>
           <Link to="/cart" onClick={openMenu}>
