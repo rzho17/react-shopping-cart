@@ -125,6 +125,20 @@
   border: 1px solid;
 }
 
+.icon {
+  /* grid-area: img; */
+  height: 40px;
+  width: 40px;
+  margin-right: 0.5rem;
+}
+
+.img:hover,
+.read:hover,
+.qtnBtn:hover,
+.add:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .productContainer {
     display: grid;
@@ -138,6 +152,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* height: 100px; */
+    height: fit-content;
   }
 
   .mainImg {

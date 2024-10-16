@@ -1,6 +1,7 @@
 import styles from "./ProductPage.module.css";
 import Button from "../utils/Button";
 import DeliveryInfo from "../utils/DeliveryInfo";
+import { TbTruckDelivery, TbTruckReturn } from "react-icons/tb";
 import { useLocation, useOutletContext } from "react-router-dom";
 import { useState } from "react";
 
@@ -58,26 +59,21 @@ export default function ProductPage() {
     // add it the cart
 
     setCartList((prevCart) => {
-      // Variable to track if the item already exists
       let itemExists = false;
-
-      // Map through the previous cart to update quantities if necessary
       const updatedCart = prevCart.map((cartItem) => {
-        if (cartItem.id === obj.id) {
-          itemExists = true; // Mark that the item exists
-          return { ...cartItem, quantity: itemQuantity }; // Update the quantity
+        if (cartItem.id == obj.id) {
+          itemExists = true;
+          return { ...cartItem, quantity: itemQuantity };
         }
-        return cartItem; // Return the unchanged cart item
+        return cartItem;
       });
 
-      // If the item did not exist, add the new object to the cart
       if (!itemExists) {
-        return [...updatedCart, obj]; // Add the new item to the updated cart
+        return [...updatedCart, obj];
       }
 
-      return updatedCart; // Return the updated cart if the item existed
+      return updatedCart;
     });
-
     // setCartList((item) => {
     //   item.push(obj);
     //   return item;
@@ -147,11 +143,13 @@ export default function ProductPage() {
             containerName={styles.deliveryContainer}
             title={"Free Delivery"}
             text={"Enter your Postal code for Delivery Availability"}
+            icon={TbTruckDelivery}
           />
           <DeliveryInfo
             containerName={styles.deliveryContainer}
             title={"Return Delivery"}
             text={"Free 30 day Delivery Return"}
+            icon={TbTruckReturn}
           />
         </div>
       </div>

@@ -117,16 +117,18 @@ nav a:hover {
   }
 
   .searchContainer input {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
   .listResults {
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     position: absolute;
     max-width: 500px;
     right: 0%;
-    top: 100%;
-    background-color: white;
+    top: 125%;
+    background-color: #fdfdfa;
     z-index: 2;
+
+    box-shadow: 0px 0px 8px #ddd;
   }
 }
 

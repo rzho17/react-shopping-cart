@@ -23,6 +23,10 @@
   margin-top: 1.5rem;
 }
 
+.hotItemSection button:hover {
+  cursor: pointer;
+}
+
 /* .product {
   width: max-content;
   border: 1px solid black;

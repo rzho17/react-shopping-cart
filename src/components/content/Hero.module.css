@@ -85,6 +85,9 @@
   align-self: flex-end;
 }
 
+.heroTitle button:hover {
+  cursor: pointer;
+}
 @media (min-width: 550px) {
   .lowHero .heroTitle {
     left: 40%;
