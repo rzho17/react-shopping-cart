@@ -23,14 +23,12 @@ export default function Main() {
         bottomText={"Styles"}
         hasBtn={true}
       />
-      <Outlet></Outlet>
 
-      <div>
+      {/* <div>
         <a href="https://react.dev" target="_blank">
           testing area please replace after
-          {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
         </a>
-      </div>
+      </div> */}
     </main>
   );
 }

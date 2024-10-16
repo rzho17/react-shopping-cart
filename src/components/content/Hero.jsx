@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
 import Button from "../utils/Button";
+import { Link } from "react-router-dom";
 
 export default function Hero({
   divName,
@@ -21,7 +22,11 @@ export default function Hero({
         <div className={styles.heroTitle}>
           <h2 className={styles.top}>{topText}</h2>
           <h2 className={styles.bot}>{bottomText}</h2>
-          {hasBtn ? <Button text={"Shop Now"} /> : null}
+          {hasBtn ? (
+            <Link to="/all">
+              <Button text={"Shop Now"} />
+            </Link>
+          ) : null}
         </div>
       </div>
     </section>

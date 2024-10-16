@@ -11,10 +11,11 @@ export default function MiniProduct({
   item,
 }) {
   return (
+    // creates mini product gallery
     <Link
       to="product"
       className={`${styles.product} ${container}`}
-      //   state={{ img, name, price, func }}
+      // holds state when clicking on the product to the product page
       state={{ item, img, name, price, func }}
     >
       {/* <img src="../src/assets/react.svg" alt="" onClick={func} /> */}

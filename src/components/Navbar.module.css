@@ -67,6 +67,7 @@ ul input:focus {
   width: 100%;
   /* border: 1px solid; */
 }
+
 .listResults {
   width: 100%;
   display: flex;
@@ -93,6 +94,10 @@ ul input:focus {
   border: none;
 }
 
+nav a:hover {
+  color: rgb(119, 117, 117);
+}
+
 @media (min-width: 769px) {
   .title {
     justify-self: center;
@@ -101,6 +106,27 @@ ul input:focus {
     left: 50%;
     transform: translateX(-50%);
     /* align-self: center; */
+  }
+}
+@media (min-width: 1000px) {
+  .searchContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+  }
+
+  .searchContainer input {
+    font-size: 1rem;
+  }
+  .listResults {
+    padding: 1.5rem 1rem;
+    position: absolute;
+    max-width: 500px;
+    right: 0%;
+    top: 100%;
+    background-color: white;
+    z-index: 2;
   }
 }
 
@@ -145,9 +171,11 @@ ul input:focus {
     font-size: 1.5rem;
   }
 
+  /* changes nav menu item properties */
   nav a {
     text-align: right;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border: 1px solid white;
   }
 
   .leftNav {
@@ -168,7 +196,8 @@ ul input:focus {
   .navInfo ul a {
     display: block;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
+    text-align: left;
   }
 
   .navInfo:nth-of-type(1) {

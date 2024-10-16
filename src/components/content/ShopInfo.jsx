@@ -1,5 +1,6 @@
 import styles from "./ShopInfo.module.css";
 import Button from "../utils/Button";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export default function ShopInfo() {
@@ -55,7 +56,9 @@ export default function ShopInfo() {
             totam inventore ipsa libero natus quam obcaecati sunt facilis nam
             voluptates? Rerum, pariatur?
           </p>
-          <Button text="Shop Now" />
+          <Link to="/all">
+            <Button text="Shop Now" />
+          </Link>
         </div>
       </div>
     </section>

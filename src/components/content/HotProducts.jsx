@@ -12,7 +12,7 @@ export default function HotProducts() {
     const fetchData = async () => {
       try {
         // setLoading(true);
-        const data = await fetch("/data/unisex_data.json");
+        const data = await fetch("/data/signatures_data.json");
 
         const allData = await data.json();
         //   console.log(allData);
@@ -56,7 +56,9 @@ export default function HotProducts() {
           <div>Loading Products</div>
         )}
       </div>
-      <Button text={"See All"} />
+      <Link to="/signature">
+        <Button text={"See All"} />
+      </Link>
     </section>
   );
 }

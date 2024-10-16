@@ -67,8 +67,10 @@ export default function Navbar() {
               setSearchResults={setSearchResults}
             />
           </div>
-          <input type="text" placeholder="Search" />
-          <Link onClick={openMenu}>Shop</Link>
+          {/* <input type="text" placeholder="Search" /> */}
+          <Link to="/signature" onClick={openMenu}>
+            Shop
+          </Link>
           <Link to="/cart" onClick={openMenu}>
             Cart
           </Link>

@@ -15,25 +15,33 @@ export default function SearchBarResults({
     setSearchResults([]);
   };
   return (
+    <>
+      {searchResults.length >= 1 ? (
+        <div className={styles.listResults}>
+          {searchResults.map((item) => {
+            return (
+              <div
+                className={styles.searchItem}
+                key={item["web-scraper-order"]}
+              >
+                <img src={item.mainImg} alt="" />
+                <Link
+                  to="product"
+                  onClick={clearSearch}
+                  state={{ item }}
+                  className={styles.linkClick}
+                >
+                  {item.name}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      ) : null}
+    </>
     // <div className="">
 
-    <div className={styles.listResults}>
-      {searchResults.map((item) => {
-        return (
-          <div className={styles.searchItem} key={item["web-scraper-order"]}>
-            <img src={item.mainImg} alt="" />
-            <Link
-              to="product"
-              // data-value={item["web-scraper-order"]}
-              onClick={clearSearch}
-              state={{ item }}
-              className={styles.linkClick}
-            >
-              {item.name}
-            </Link>
-          </div>
-        );
-      })}
-    </div>
+    // creates a div with all the results from the filtered search bar
+    // creates links and visuals to each product filtered
   );
 }

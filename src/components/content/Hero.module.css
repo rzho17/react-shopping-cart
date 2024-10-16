@@ -45,7 +45,7 @@
   -webkit-text-stroke: 2px white;
 }
 .lowHero .bot {
-  color: white;
+  color: rgb(236, 53, 53);
   margin-bottom: 1.5rem;
 }
 
@@ -79,7 +79,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   padding: 0.8rem 1.5rem;
-  color: white;
+  color: rgb(241, 77, 71);
   border: 3px solid;
   background-color: transparent;
   align-self: flex-end;
@@ -126,6 +126,10 @@
 
   .bot {
     margin-top: -4rem;
+  }
+
+  .heroTitle button {
+    color: white;
   }
 }
 
