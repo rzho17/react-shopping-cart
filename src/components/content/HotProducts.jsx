@@ -38,7 +38,14 @@ export default function HotProducts() {
   console.log("product data", productData);
   return (
     <section className={styles.hotItemSection}>
-      <h2>Hot Arrivals</h2>
+      <div className={styles.h2Container}>
+        <h2>
+          new arrivals &#8226; new arrivals &#8226; new arrivals &#8226; new
+          arrivals &#8226; new arrivals &#8226; new arrivals &#8226; new
+          arrivals &#8226; new arrivals &#8226; new arrivals &#8226; new
+          arrivals &#8226; new arrivals &#8226; new arrivals &#8226;
+        </h2>
+      </div>
       <div className={styles.productContainer}>
         {loading === false ? (
           productData.slice(0, 8).map((item) => {
@@ -57,7 +64,7 @@ export default function HotProducts() {
         )}
       </div>
       <Link to="/signature">
-        <Button text={"See All"} />
+        <Button text={"see all"} />
       </Link>
     </section>
   );

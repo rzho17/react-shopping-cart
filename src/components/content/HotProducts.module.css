@@ -1,11 +1,21 @@
+:root {
+  --main-bg-color: #f9f8f3;
+  --main-header-color: #064ef2;
+  --second-bg-color: #e1d2f3;
+  --third-bg-color: #dcfc73;
+  --font-color: #231f20;
+}
+
 .hotItemSection {
-  margin: 6rem 0;
+  margin: 3rem 1rem;
 }
 
 .hotItemSection h2 {
   text-align: left;
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-variation-settings: "wght" 700;
+  margin: 0;
 }
 .productContainer {
   display: flex;
@@ -14,12 +24,12 @@
 }
 
 .hotItemSection button {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 0.8rem 1.5rem;
-  color: black;
-  border: 1px solid;
-  background-color: transparent;
+  padding: 0.5rem 1rem;
+  color: var(--font-color);
+  border: 1px solid var(--font-color);
+  background-color: var(--third-bg-color);
   margin-top: 1.5rem;
 }
 
@@ -27,6 +37,24 @@
   cursor: pointer;
 }
 
+.h2Container {
+  width: 100%;
+  overflow: hidden;
+}
+.hotItemSection h2 {
+  animation: RightToLeft 5s infinite linear;
+  text-wrap: nowrap;
+  word-spacing: 0.8rem;
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translate(0%);
+  }
+  to {
+    transform: translate(-50%);
+  }
+}
 /* .product {
   width: max-content;
   border: 1px solid black;

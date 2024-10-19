@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import styles from "../Navbar.module.css";
 
 export const SearchBar = ({ setSearchResults, input, setInput }) => {
   // fetches all shopping data
@@ -24,7 +25,7 @@ export const SearchBar = ({ setSearchResults, input, setInput }) => {
   };
 
   return (
-    <div>
+    <div className={styles.searchBar}>
       <input
         type="text"
         placeholder="Search"

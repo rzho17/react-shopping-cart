@@ -24,7 +24,7 @@ export default function Hero({
           <h2 className={styles.bot}>{bottomText}</h2>
           {hasBtn ? (
             <Link to="/all">
-              <Button text={"Shop Now"} />
+              <Button text={"shop now"} />
             </Link>
           ) : null}
         </div>

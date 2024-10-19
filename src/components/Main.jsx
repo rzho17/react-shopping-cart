@@ -11,16 +11,16 @@ export default function Main() {
       <Hero
         divName={"hero"}
         img={"clarisse-meyer-hero.jpg"}
-        topText={"Wear"}
-        bottomText={"Modish"}
+        topText={"twelve steps"}
+        bottomText={"ahead"}
       />
       <ShopInfo />
       <HotProducts />
       <Hero
         divName={"lowHero"}
         img={"michael-demoya-low-hero.jpg"}
-        topText={"Hunt"}
-        bottomText={"Styles"}
+        topText={"dress code:"}
+        bottomText={"twelfth"}
         hasBtn={true}
       />
 

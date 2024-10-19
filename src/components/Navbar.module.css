@@ -1,3 +1,11 @@
+:root {
+  --main-bg-color: #f9f8f3;
+  --main-header-color: #064ef2;
+  --second-bg-color: #e1d2f3;
+  --third-bg-color: #dcfc73;
+  --font-color: #231f20;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -5,14 +13,19 @@ header {
   align-items: center;
   position: relative;
   height: 4rem;
+
+  margin: 1rem;
 }
 
 .title {
-  font-family: "Lobster", sans-serif;
-  font-weight: 400;
+  font-family: "totalblack-variable", sans-serif;
+  /* font-weight: 400; */
+  font-variation-settings: "wght" 700;
   font-style: normal;
   font-size: 4rem;
   margin: 0;
+
+  color: var(--font-color);
 }
 
 .headLink {
@@ -21,25 +34,34 @@ header {
 }
 .navInfo ul {
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
+  gap: 1rem;
   list-style: none;
   margin: 0;
 }
 
 .navInfo ul a {
   color: rgb(50, 50, 50);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 ul input {
   border: none;
-  border-bottom: 1px solid rgb(197, 197, 197);
+  /* border-bottom: 1px solid rgb(197, 197, 197); */
   background-color: transparent;
   background-image: url("../assets/search-icon.svg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 1rem;
-  color: black;
+  color: var(--font-color);
+  font-family: "totalblack-variable", sans-serif;
+  font-variation-settings: "wght" 300;
+}
+
+.searchBar {
+  border: 1px solid var(--font-color);
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
 }
 
 ul input:focus {
@@ -59,7 +81,8 @@ ul input:focus {
 .menu span {
   height: 0.4rem;
   width: 100%;
-  background-color: black;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--font-color);
   border-radius: 0.2rem;
 }
 
@@ -72,7 +95,7 @@ ul input:focus {
   width: 100%;
   display: flex;
   flex-direction: column;
-  max-height: 500px;
+  max-height: 600px;
   overflow-y: scroll;
 }
 
@@ -125,7 +148,7 @@ nav a:hover {
     max-width: 500px;
     right: 0%;
     top: 125%;
-    background-color: #fdfdfa;
+    background-color: var(--main-bg-color);
     z-index: 2;
 
     box-shadow: 0px 0px 8px #ddd;
@@ -133,6 +156,9 @@ nav a:hover {
 }
 
 @media (max-width: 1000px) {
+  /* header {
+    margin: 1rem;
+  } */
   .title {
     position: absolute;
     font-size: 3rem;
@@ -155,11 +181,17 @@ nav a:hover {
     z-index: 1;
   }
 
+  nav:nth-of-type(1) {
+    position: absolute;
+    top: 248px;
+    z-index: 1;
+  }
+
   .navInfo ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: var(--main-bg-color);
     backdrop-filter: blur(50px);
     /* border-radius: 10px; */
     padding: 1rem;
@@ -170,14 +202,14 @@ nav a:hover {
 
   .navInfo ul input {
     height: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   /* changes nav menu item properties */
   nav a {
     text-align: right;
     /* border: 1px solid black; */
-    border: 1px solid white;
+    border: 1px solid var(--main-bg-color);
   }
 
   .leftNav {
@@ -204,5 +236,9 @@ nav a:hover {
 
   .navInfo:nth-of-type(1) {
     margin-top: -17px;
+  }
+  .navInfo:nth-of-type(1) ul {
+    /* height: 100%; */
+    padding-bottom: 15rem;
   }
 }

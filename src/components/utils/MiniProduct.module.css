@@ -1,3 +1,11 @@
+:root {
+  --main-bg-color: #f9f8f3;
+  --main-header-color: #064ef2;
+  --second-bg-color: #e1d2f3;
+  --third-bg-color: #dcfc73;
+  --font-color: #231f20;
+}
+
 .product {
   width: max-content;
   /* border: 1px solid black; */
@@ -22,7 +30,19 @@
 .productInfo p {
   text-align: left;
   font-weight: bold;
+  font-family: "totalblack-variable", sans-serif;
+  font-size: 0.8rem;
+  font-variation-settings: "wght" 600;
+  color: var(--font-color);
   /* text-align: center; */
+}
+
+.productInfo p:nth-of-type(1) {
+  width: 75%;
+}
+
+.productInfo p:nth-of-type(2) {
+  font-variation-settings: "wght" 300;
 }
 
 .product:hover {

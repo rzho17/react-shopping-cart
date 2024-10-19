@@ -5,6 +5,8 @@ import { useState } from "react";
 import { SearchBar } from "./utils/SearchBar";
 import SearchBarResults from "./utils/SearchBarResults";
 
+import Footer from "./Footer";
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -40,11 +42,12 @@ export default function Navbar() {
               Kids
             </NavLink>
           </li>
+          {/* <Footer /> */}
         </ul>
       </nav>
 
       <Link to="/" className={styles.headLink}>
-        <h1 className={styles.title}>ModishTee</h1>
+        <h1 className={styles.title}>twelfth</h1>
       </Link>
       {/* <h1 className={styles.title}>ModishTee</h1> */}
 

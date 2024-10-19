@@ -49,7 +49,7 @@ export default function ShopInfo() {
           </div>
         ) : null}
         <div className={styles.infoContainer}>
-          <h3>Never Before Tees</h3>
+          <h3>wear the change you want to see</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
             eligendi repudiandae itaque, reiciendis quis iure pariatur. Rem
@@ -57,7 +57,7 @@ export default function ShopInfo() {
             voluptates? Rerum, pariatur?
           </p>
           <Link to="/all">
-            <Button text="Shop Now" />
+            <Button text="shop now" />
           </Link>
         </div>
       </div>
