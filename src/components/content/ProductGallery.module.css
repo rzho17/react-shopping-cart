@@ -9,19 +9,39 @@
 .galleryContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
   /* margin: 0 1rem; */
-  padding: 1rem;
+  padding: 2rem;
   background-color: var(--second-bg-color);
+
+  padding: 2rem 2rem;
+  position: relative;
+  padding-left: 2.5rem;
 }
 
 .productGallery h2 {
   background-color: var(--second-bg-color);
-  text-align: left;
+  /* text-align: left;
   font-size: 2rem;
   padding: 1rem;
+  margin: 0; */
+
+  font-size: 1.5rem;
+  background-color: var(--font-color);
+  color: var(--second-bg-color);
+  padding: 0 1.5rem;
   margin: 0;
+  width: fit-content;
+
+  position: fixed;
+  transform: rotate(-90deg);
+  top: 12rem;
+  /* left: -4rem; */
+  left: -20%;
+
+  z-index: 1;
 }
+
 .galleryProduct {
   padding: 0;
   /* padding: 1rem; */

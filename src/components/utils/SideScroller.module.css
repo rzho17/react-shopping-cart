@@ -7,6 +7,7 @@
 }
 
 .sideScroll {
+  overflow: hidden;
   background-color: var(--font-color);
 }
 
@@ -23,7 +24,6 @@
 }
 
 .main {
-  /* font-family: "totalblack-variable", sans-serif; */
   font-variation-settings: "wght" 500;
 }
 
