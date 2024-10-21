@@ -28,7 +28,7 @@ export default function CartItems({ cartList, setCartList }) {
           <img src={item.img} alt="" />
           <h3>{item.name}</h3>
           <div className={styles.qtnBtn}>
-            {item.price} (x{item.quantity})
+            {item.price}&#215;{item.quantity}
           </div>
           {/* <QuantityBtn name={styles.qtnBtn} /> */}
           <p>${item.price * item.quantity}</p>
