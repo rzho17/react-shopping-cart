@@ -29,17 +29,17 @@ export default function Navbar() {
         <ul>
           <li>
             <NavLink to="/men" onClick={openMenu}>
-              Men
+              men
             </NavLink>
           </li>
           <li>
             <NavLink to="/women" onClick={openMenu}>
-              Women
+              women
             </NavLink>
           </li>
           <li>
             <NavLink to="/kids" onClick={openMenu}>
-              Kids
+              kids
             </NavLink>
           </li>
           {/* <Footer /> */}
@@ -72,10 +72,10 @@ export default function Navbar() {
           </div>
           {/* <input type="text" placeholder="Search" /> */}
           <Link to="/signature" onClick={openMenu}>
-            Shop
+            shop
           </Link>
           <Link to="/cart" onClick={openMenu}>
-            Cart
+            cart
           </Link>
         </ul>
       </nav>

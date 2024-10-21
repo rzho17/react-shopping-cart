@@ -1,12 +1,26 @@
+:root {
+  --main-bg-color: #f9f8f3;
+  --main-header-color: #064ef2;
+  --second-bg-color: #e1d2f3;
+  --third-bg-color: #dcfc73;
+  --font-color: #231f20;
+}
+
 .galleryContainer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  /* margin: 0 1rem; */
+  padding: 1rem;
+  background-color: var(--second-bg-color);
 }
 
 .productGallery h2 {
+  background-color: var(--second-bg-color);
   text-align: left;
   font-size: 2rem;
+  padding: 1rem;
+  margin: 0;
 }
 .galleryProduct {
   padding: 0;
@@ -20,6 +34,10 @@
 
 .galleryContainer .productInfo {
   margin: 10rem;
+}
+
+.galleryContainer p {
+  font-size: 0.75rem;
 }
 
 @media (min-width: 768px) {

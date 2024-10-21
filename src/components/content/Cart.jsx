@@ -2,7 +2,7 @@ import styles from "./Cart.module.css";
 import QuantityBtn from "../utils/QuantityBtn";
 import Button from "../utils/Button";
 import CartItems from "../utils/CartItems";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useOutletContext } from "react-router-dom";
 
 export default function Cart() {
@@ -24,7 +24,7 @@ export default function Cart() {
 
   return (
     <div className={styles.cartPage}>
-      <h2>Your Cart</h2>
+      <h2>your cart</h2>
 
       {screen.width > 768 && (
         // <tr>
@@ -51,13 +51,13 @@ export default function Cart() {
 
       <div className={styles.checkoutContainer}>
         <div className={styles.checkoutInfo}>
-          <h5>Subtotal</h5>
+          <h5>SUBTOTAL</h5>
           <p className={styles.price}>${total}</p>
           <p className={styles.disclaimer}>
             Shipping and taxes computed at checkout
           </p>
         </div>
-        <Button name={styles.checkOut} text={"Checkout"}></Button>
+        <Button name={styles.checkOut} text={"checkout"}></Button>
       </div>
     </div>
   );

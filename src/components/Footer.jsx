@@ -4,14 +4,14 @@ export default function Footer() {
   return (
     <footer>
       <div className={styles.info}>
-        <h3>About ModishTee</h3>
-        <h3>Help</h3>
-        <h3>Careers</h3>
-        <h3>Account</h3>
-        <h3>E-Newsletter</h3>
+        <h3>about us</h3>
+        <h3>questions</h3>
+        <h3>careers</h3>
+        <h3>account</h3>
+        <h3>e-newsletter</h3>
       </div>
       <div className={styles.lower}>
-        <h2 className={styles.header}>ModishTee</h2>
+        <h2 className={styles.header}>twelfth</h2>
         <div className={styles.socials}>
           <img
             src="../src/assets/facebook.svg"
