@@ -53,7 +53,7 @@ export default function Navbar() {
 
       <nav
         className={`${styles.navInfo} ${styles.rightNav}  ${
-          menuOpen ? styles.open : "null"
+          menuOpen ? styles.open : ""
         }`}
       >
         <ul>
@@ -79,7 +79,10 @@ export default function Navbar() {
           </Link>
         </ul>
       </nav>
-      <div className={`${styles.menu} `} onClick={openMenu}>
+      <div
+        className={`${styles.menu} ${menuOpen ? styles.rotate : styles.close}`}
+        onClick={openMenu}
+      >
         <span></span>
         <span></span>
         <span></span>

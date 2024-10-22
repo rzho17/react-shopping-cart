@@ -122,6 +122,31 @@ nav a:hover {
   color: rgb(119, 117, 117);
 }
 
+.rotate {
+  animation: Open 0.25s linear forwards;
+}
+
+.close {
+  animation: Close 0.25s linear forwards;
+}
+
+@keyframes Open {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes Close {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @media (min-width: 769px) {
   .title {
     justify-self: center;
