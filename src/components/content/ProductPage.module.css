@@ -1,7 +1,23 @@
+:root {
+  --main-bg-color: #f9f8f3;
+  --main-header-color: #064ef2;
+  --second-bg-color: #e1d2f3;
+  --third-bg-color: #dcfc73;
+  --font-color: #231f20;
+}
+
+.productContainer {
+  padding: 1rem;
+  background-color: var(--second-bg-color);
+}
+
+.productContainer p {
+  font-family: "totalblack-variable", sans-serif;
+  font-variation-settings: "wght" 300;
+}
 .mainImg {
   width: 100%;
   margin: 1rem 0 1rem 0;
-  border: 1px solid;
 }
 
 .smallImgContainer {
@@ -12,7 +28,6 @@
 .img {
   width: 100%;
   margin: 0 0 1rem 0;
-  border: 1px solid;
 }
 
 .infoContainer {
@@ -25,23 +40,27 @@
 }
 
 .infoContainer h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin: 0;
+  font-variation-settings: "wght" 600;
 }
 
 .infoContainer h3 {
   font-size: 2.5rem;
-  margin: 0;
+  margin: 1rem 0 0;
+  font-variation-settings: "wght" 600;
 }
 
 .quantityContainer {
   display: flex;
+  color: var(--font-color);
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
   margin: 1rem 0 1rem;
-  border: 1px solid black;
-  font-family: "Courier New", Courier, monospace;
+  border: 1px solid var(--font-color);
+  width: 100%;
+  font-variation-settings: "wght" 300;
   /* background-color: aliceblue; */
 }
 
@@ -50,11 +69,10 @@
 }
 
 .qtnBtn {
-  font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: var(--font-color);
   font-size: 2.5rem;
   padding: 0 1.5rem;
   width: 3rem;
@@ -63,9 +81,10 @@
 }
 
 .infoContainer .add {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem 3rem;
-  background-color: rgb(47, 230, 53);
+  color: var(--font-color);
+  background-color: var(--third-bg-color);
   border: none;
   width: 100%;
   margin-bottom: 2rem;
@@ -118,11 +137,12 @@
 }
 
 .infoContainer .read {
-  color: rgb(153, 154, 154);
+  color: var(--font-color);
   font-size: 1.2rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   background-color: transparent;
   border: 1px solid;
+  font-variation-settings: "wght" 300;
 }
 
 .icon {
