@@ -23,22 +23,22 @@ export default function ShopInfo() {
       <div className={styles.imgGrid}>
         <div>
           <img
-            src="../src/assets/camera-guy.jpg"
-            alt="guy point camera at user"
+            src="../src/assets/pexels-2.jpg"
+            alt="man running away from camera on beach"
             className={styles.img}
           />
         </div>
         <div>
           <img
-            src="../src/assets/hip-fashion.jpg"
-            alt="hip fashion guy posing for camera"
+            src="../src/assets/pexels-1.jpg"
+            alt="two hip people posing for camera"
             className={styles.img}
           />
         </div>
         <div>
           <img
-            src="../src/assets/shirts.jpg"
-            alt="rack of t-shirts"
+            src="../src/assets/pexels-3.jpg"
+            alt="girl with sun glasses sitting on ground posing for camera"
             className={styles.img}
           />
         </div>

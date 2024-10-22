@@ -14,8 +14,13 @@ header {
   position: relative;
   height: 4rem;
 
-  margin: 1rem;
+  /* padding: 1rem; */
+  /* margin: 1rem; */
   z-index: 2;
+}
+
+header h1 {
+  padding: 1rem;
 }
 
 .title {
@@ -33,6 +38,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .navInfo ul {
   display: flex;
   /* gap: 2rem; */
@@ -42,7 +48,7 @@ header {
 }
 
 .navInfo ul a {
-  color: rgb(50, 50, 50);
+  color: var(--font-color);
   font-size: 1.5rem;
 }
 
@@ -57,10 +63,11 @@ ul input {
   color: var(--font-color);
   font-family: "totalblack-variable", sans-serif;
   font-variation-settings: "wght" 300;
+  width: 7rem;
 }
 
 .searchBar {
-  border: 1px solid var(--font-color);
+  border: 1px solid rgb(216, 213, 213);
   border-radius: 25px;
   padding: 0.5rem 1rem;
 }
@@ -89,7 +96,6 @@ ul input:focus {
 
 .searchContainer {
   width: 100%;
-  /* border: 1px solid; */
 }
 
 .listResults {
@@ -123,11 +129,11 @@ nav a:hover {
 }
 
 .rotate {
-  animation: Open 0.25s linear forwards;
+  animation: Open 0.4s linear forwards;
 }
 
 .close {
-  animation: Close 0.25s linear forwards;
+  animation: Close 0.4s linear forwards;
 }
 
 @keyframes Open {
@@ -147,7 +153,12 @@ nav a:hover {
     transform: rotate(0deg);
   }
 }
-@media (min-width: 769px) {
+
+.searchContainer:hover {
+  cursor: text;
+}
+
+@media (min-width: 768px) {
   .title {
     justify-self: center;
     position: absolute;
@@ -158,10 +169,19 @@ nav a:hover {
   }
 }
 @media (min-width: 1000px) {
+  header {
+    height: 6rem;
+  }
+
+  .navInfo ul {
+    padding: 0 1rem;
+  }
+
   .searchContainer {
     width: 100%;
     display: flex;
     align-items: center;
+
     /* border: 1px solid; */
   }
 
@@ -172,8 +192,8 @@ nav a:hover {
     padding: 1rem;
     position: absolute;
     max-width: 500px;
-    right: 0%;
-    top: 125%;
+    right: 1%;
+    top: 115%;
     background-color: var(--main-bg-color);
     z-index: 2;
 
@@ -192,6 +212,7 @@ nav a:hover {
   }
   .menu {
     display: flex;
+    margin-right: 0.5rem;
   }
 
   .open {
@@ -265,6 +286,6 @@ nav a:hover {
   }
   .navInfo:nth-of-type(1) ul {
     /* height: 100%; */
-    padding-bottom: 15rem;
+    padding-bottom: 17rem;
   }
 }

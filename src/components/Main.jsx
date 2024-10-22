@@ -10,7 +10,8 @@ export default function Main() {
       {/* <Outlet /> */}
       <Hero
         divName={"hero"}
-        img={"clarisse-meyer-hero.jpg"}
+        // img={"clarisse-meyer-hero.jpg"}
+        img={"pexels-hero.jpg"}
         topText={"twelve steps"}
         bottomText={"ahead"}
       />
@@ -18,7 +19,8 @@ export default function Main() {
       <HotProducts />
       <Hero
         divName={"lowHero"}
-        img={"michael-demoya-low-hero.jpg"}
+        // img={"michael-demoya-low-hero.jpg"}
+        img={"pexels-footer.jpg"}
         topText={"dress code:"}
         bottomText={"twelfth"}
         hasBtn={true}

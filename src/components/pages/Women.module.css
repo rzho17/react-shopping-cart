@@ -2,3 +2,24 @@
   top: 9.75rem;
   left: -16%;
 }
+
+@media screen and (min-width: 400px) {
+  .women h2 {
+    left: -14%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .women h2 {
+    left: -12%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .women h2 {
+    left: -10%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .women h2 {
+    left: -8%;
+  }
+}

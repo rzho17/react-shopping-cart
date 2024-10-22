@@ -1,4 +1,27 @@
-.men h2 {
-  top: 8.6rem;
-  left: -12%;
+@media screen and (max-width: 767px) {
+  .men h2 {
+    top: 8.6rem;
+    left: -12%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .men h2 {
+    left: -10%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .men h2 {
+    left: -8%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .men h2 {
+    left: -6%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .men h2 {
+    left: -6%;
+  }
 }

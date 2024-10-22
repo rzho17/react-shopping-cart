@@ -4,7 +4,7 @@ import styles from "../Navbar.module.css";
 export const SearchBar = ({ setSearchResults, input, setInput }) => {
   // fetches all shopping data
   const fetchData = async (value) => {
-    const data = await fetch("/data/modishs_data.json");
+    const data = await fetch("/data/twelfths_data.json");
 
     const allData = await data.json();
 
