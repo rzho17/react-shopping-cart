@@ -57,11 +57,12 @@ footer {
 .icon {
   width: 1.3rem;
 }
-/* @media (max-width: 900px) {
-  .info {
-    font-size: 0.5rem;
-  }
-} */
+
+.info h3:hover,
+.lower h2:hover,
+.icon:hover {
+  cursor: pointer;
+}
 
 @media (min-width: 900px) {
   .info {
@@ -76,5 +77,11 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  footer {
+    margin: 0 4rem;
   }
 }

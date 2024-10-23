@@ -130,6 +130,10 @@
   border-bottom: 1px solid var(--font-color);
 }
 
+.checkOut:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .cartPage h2 {
     border: 0;
@@ -179,5 +183,11 @@
 
   .cartContainer {
     padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cartPage {
+    padding: 4rem;
   }
 }

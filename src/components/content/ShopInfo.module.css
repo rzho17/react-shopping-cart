@@ -208,3 +208,9 @@
     grid-area: img2;
   } */
 }
+
+@media screen and (min-width: 1000px) {
+  .imgGrid {
+    padding: 2.5rem 4rem;
+  }
+}

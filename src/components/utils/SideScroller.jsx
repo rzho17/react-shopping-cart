@@ -20,6 +20,22 @@ export default function SideScroller({ text, text2 }) {
           {" "}
           &#8226; {text} <span className={styles.sub}>{text2}</span>{" "}
         </span>
+        <span className={styles.main}>
+          {" "}
+          &#8226; {text} <span className={styles.sub}>{text2}</span>{" "}
+        </span>
+        <span className={styles.main}>
+          {" "}
+          &#8226; {text} <span className={styles.sub}>{text2}</span>{" "}
+        </span>
+        <span className={styles.main}>
+          {" "}
+          &#8226; {text} <span className={styles.sub}>{text2}</span>{" "}
+        </span>
+        <span className={styles.main}>
+          {" "}
+          &#8226; {text} <span className={styles.sub}>{text2}</span>{" "}
+        </span>
       </h3>
     </div>
   );

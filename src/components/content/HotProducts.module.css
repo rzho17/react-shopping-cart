@@ -55,6 +55,12 @@
     transform: translate(-50%);
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .hotItemSection {
+    margin: 3rem 4rem;
+  }
+}
 /* .product {
   width: max-content;
   border: 1px solid black;

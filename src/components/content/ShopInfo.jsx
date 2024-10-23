@@ -42,9 +42,9 @@ export default function ShopInfo() {
             className={styles.img}
           />
         </div>
-        {width > 768 ? (
+        {width > 850 ? (
           <div className={styles.header}>
-            <h2>elevate everyday</h2>
+            <h2>elevate </h2>
             <h2>with twelfth</h2>
           </div>
         ) : null}
