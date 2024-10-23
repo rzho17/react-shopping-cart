@@ -1,4 +1,3 @@
-import QuantityBtn from "./QuantityBtn";
 import styles from "../content/Cart.module.css";
 import Button from "./Button";
 
