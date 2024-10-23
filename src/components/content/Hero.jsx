@@ -14,7 +14,7 @@ export default function Hero({
     <section className={styles.heroSection}>
       <div className={`${styles[divName]}`}>
         <img
-          src={`./src/assets/${img}`}
+          src={`/data/assets/${img}`}
           alt="hero section img"
           className={styles.heroImg}
         />

@@ -14,22 +14,22 @@ export default function Footer() {
         <h2 className={styles.header}>twelfth</h2>
         <div className={styles.socials}>
           <img
-            src="../src/assets/facebook.svg"
+            src="/data/assets/facebook.svg"
             alt="facebook icon"
             className={styles.icon}
           ></img>
           <img
-            src="../src/assets/insta.svg"
+            src="/data/assets/insta.svg"
             alt="instagram icon"
             className={styles.icon}
           ></img>
           <img
-            src="../src/assets/twitter.svg"
+            src="/data/assets/twitter.svg"
             alt="twitter icon"
             className={styles.icon}
           ></img>
           <img
-            src="../src/assets/youtube.svg"
+            src="/data/assets/youtube.svg"
             alt="youtube icon"
             className={styles.icon}
           ></img>
