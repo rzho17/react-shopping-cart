@@ -1,6 +1,7 @@
 import styles from "./Hero.module.css";
 import Button from "../utils/Button";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function Hero({
   divName,
@@ -13,10 +14,8 @@ export default function Hero({
     <section className={styles.heroSection}>
       <div className={`${styles[divName]}`}>
         <img
-          //   src="./src/assets/clarisse-meyer-hero.jpg"
           src={`./src/assets/${img}`}
-          //   src=`./src/assets/${img}`
-          alt=""
+          alt="hero section img"
           className={styles.heroImg}
         />
         <div className={styles.heroTitle}>
@@ -32,3 +31,11 @@ export default function Hero({
     </section>
   );
 }
+
+Hero.propTypes = {
+  divName: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  topText: PropTypes.string.isRequired,
+  bottomText: PropTypes.string,
+  hasBtn: PropTypes.bool,
+};

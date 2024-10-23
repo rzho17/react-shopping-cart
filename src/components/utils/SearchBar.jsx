@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import styles from "../Navbar.module.css";
+import PropTypes from "prop-types";
 
 export const SearchBar = ({ setSearchResults, input, setInput }) => {
   // fetches all shopping data
@@ -34,4 +34,10 @@ export const SearchBar = ({ setSearchResults, input, setInput }) => {
       />
     </div>
   );
+};
+
+SearchBar.propTypes = {
+  setSearchResults: PropTypes.func.isRequired,
+  input: PropTypes.string.isRequired,
+  setInput: PropTypes.func.isRequired,
 };

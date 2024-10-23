@@ -50,15 +50,12 @@ export default function ProductPage() {
       quantity: itemQuantity,
     };
 
-    console.log(obj);
-
     // setcartlist
     // loop through cart items
     // if the id of an item matches obj quantity
     // update that items quantity
     // if id is not found, we know its a new item
     // add it the cart
-
     setCartList((prevCart) => {
       let itemExists = false;
       const updatedCart = prevCart.map((cartItem) => {
@@ -75,12 +72,6 @@ export default function ProductPage() {
 
       return updatedCart;
     });
-    // setCartList((item) => {
-    //   item.push(obj);
-    //   return item;
-    // });
-
-    console.log(cartList);
   };
   return (
     <>
@@ -117,7 +108,7 @@ export default function ProductPage() {
 
         <div className={styles.infoContainer}>
           <h2>{item.name}</h2>
-          {/* <p>{item.description}</p> */}
+
           <p>
             {isExpanded
               ? item.description

@@ -10,7 +10,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  /* margin: 0 1rem; */
   padding: 2rem;
   background-color: var(--second-bg-color);
 
@@ -21,10 +20,6 @@
 
 .productGallery h2 {
   background-color: var(--second-bg-color);
-  /* text-align: left;
-  font-size: 2rem;
-  padding: 1rem;
-  margin: 0; */
 
   font-size: 1.5rem;
   background-color: var(--font-color);
@@ -43,11 +38,9 @@
 
 .galleryProduct {
   padding: 0;
-  /* padding: 1rem; */
   width: 100%;
 }
 .galleryProduct img {
-  /* width: 5rem; */
   width: 100%;
 }
 
@@ -65,8 +58,7 @@
   }
   .productGallery h2 {
     position: static;
-    /* top: 5rem; */
-    /* right: -1rem; */
+
     transform: translateY(2rem);
     transform: none;
 

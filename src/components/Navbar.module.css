@@ -14,8 +14,6 @@ header {
   position: relative;
   height: 4rem;
 
-  /* padding: 1rem; */
-  /* margin: 1rem; */
   z-index: 2;
 }
 
@@ -25,7 +23,6 @@ header h1 {
 
 .title {
   font-family: "totalblack-variable", sans-serif;
-  /* font-weight: 400; */
   font-variation-settings: "wght" 700;
   font-style: normal;
   font-size: 4rem;
@@ -41,7 +38,7 @@ header h1 {
 
 .navInfo ul {
   display: flex;
-  /* gap: 2rem; */
+
   gap: 1rem;
   list-style: none;
   margin: 0;
@@ -54,7 +51,6 @@ header h1 {
 
 ul input {
   border: none;
-  /* border-bottom: 1px solid rgb(197, 197, 197); */
   background-color: transparent;
   background-image: url("../assets/search-icon.svg");
   background-repeat: no-repeat;
@@ -165,7 +161,6 @@ nav a:hover {
 
     left: 50%;
     transform: translateX(-50%);
-    /* align-self: center; */
   }
 }
 @media (min-width: 1000px) {
@@ -181,8 +176,6 @@ nav a:hover {
     width: 100%;
     display: flex;
     align-items: center;
-
-    /* border: 1px solid; */
   }
 
   .searchContainer input {
@@ -205,14 +198,9 @@ nav a:hover {
 }
 
 @media (max-width: 1000px) {
-  /* header {
-    margin: 1rem;
-  } */
-
   .title {
     position: absolute;
     font-size: 3rem;
-    /* margin-left: 2rem; */
   }
   .menu {
     display: flex;
@@ -226,9 +214,9 @@ nav a:hover {
     display: none;
     position: absolute;
     top: 60px;
-    /* bottom: 0; */
+
     width: 100%;
-    /* display: block; */
+
     z-index: 1;
   }
 
@@ -244,11 +232,8 @@ nav a:hover {
     align-items: center;
     background-color: var(--main-bg-color);
     backdrop-filter: blur(50px);
-    /* border-radius: 10px; */
-    padding: 1rem;
 
-    /* position: absolute; */
-    /* left: 0; */
+    padding: 1rem;
   }
 
   .navInfo ul input {
@@ -259,21 +244,13 @@ nav a:hover {
   /* changes nav menu item properties */
   nav a {
     text-align: right;
-    /* border: 1px solid black; */
+
     border: 1px solid var(--main-bg-color);
   }
 
   .leftNav {
-    /* position: relative; */
-    /* bottom: 50px; */
-    /* background-color: red; */
-    /* top: 215px; */
     top: 295px;
     position: absolute;
-  }
-
-  .rightNav {
-    /* background-color: rgb(201, 201, 201); */
   }
 
   .navInfo ul li,
@@ -281,7 +258,7 @@ nav a:hover {
   .navInfo ul a {
     display: block;
     width: 100%;
-    /* text-align: center; */
+
     text-align: left;
   }
 
@@ -289,7 +266,6 @@ nav a:hover {
     margin-top: -17px;
   }
   .navInfo:nth-of-type(1) ul {
-    /* height: 100%; */
     padding-bottom: 17rem;
   }
 }

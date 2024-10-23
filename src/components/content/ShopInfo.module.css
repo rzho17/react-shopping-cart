@@ -31,35 +31,23 @@
   padding: 2.5rem;
   gap: 1rem;
   background-color: #231f20;
-  /* gap: 1rem; */
-  /* height: 25rem; */
-  /* width: 100%; */
 }
 
-/* img and div */
 .imgGrid div:nth-of-type(1) {
   display: flex;
   grid-area: a;
   flex: 1;
-
-  /* css to change it to previous */
-  /* margin: 1rem 0 1rem 0; */
 }
 
 .imgGrid img:nth-of-type(1) {
   flex: 2;
   object-fit: cover;
-  /* align-self: center; */
 }
 
 .imgGrid div:nth-of-type(2) {
   display: flex;
   grid-area: b;
   overflow: hidden;
-
-  /* css to previous */
-  /* width: 80%; */
-  /* justify-self: center; */
 }
 .imgGrid img:nth-of-type(2) {
   object-fit: cover;
@@ -68,11 +56,6 @@
 .imgGrid div:nth-of-type(3) {
   display: flex;
   grid-area: c;
-
-  /* margin: 1rem; */
-
-  /* css to previous */
-  /* margin: 2rem 0 0 3rem; */
 }
 .imgGrid img:nth-of-type(3) {
   justify-self: flex-end;
@@ -125,11 +108,6 @@
   .imgGrid {
     display: grid;
 
-    /* grid-template-areas:
-      "head head head head"
-      "main main main main"
-      "main main main main"
-      "... ...  info info"; */
     grid-template-areas:
       "head head head"
       "main img1 img2"
@@ -140,12 +118,11 @@
 
     gap: 1rem;
     position: relative;
-    /* column-gap: 2rem 1rem 1rem; */
   }
 
   .header {
     grid-area: head;
-    /* grid-column: 1/ 2; */
+
     position: absolute;
   }
 
@@ -173,14 +150,12 @@
     grid-area: img1;
     height: 90%;
     width: 100%;
-    /* align-self: center; */
   }
   .imgGrid div:nth-of-type(3) {
     grid-area: img2;
     height: 90%;
     align-self: flex-end;
     margin: 0;
-    /* margin: 1rem 0rem 0rem 1.5rem; */
   }
 
   .infoContainer {
@@ -193,20 +168,6 @@
     text-align: left;
     margin: 0;
   }
-
-  /*
-  .imgGrid {
-    grid-area: main;
-  } */
-  /* .imgGrid div:nth-of-type(1) {
-    grid-area: main;
-  }
-  .imgGrid div:nth-of-type(2) {
-    grid-area: img1;
-  }
-  .imgGrid div:nth-of-type(3) {
-    grid-area: img2;
-  } */
 }
 
 @media screen and (min-width: 1000px) {

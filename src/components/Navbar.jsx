@@ -5,8 +5,6 @@ import { useState } from "react";
 import { SearchBar } from "./utils/SearchBar";
 import SearchBarResults from "./utils/SearchBarResults";
 
-import Footer from "./Footer";
-
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,7 +18,6 @@ export default function Navbar() {
 
   return (
     <header>
-      {/* <input type="text" placeholder="Search" /> */}
       <nav
         className={`${styles.navInfo} ${styles.leftNav}  ${
           menuOpen ? styles.open : ""
@@ -42,14 +39,12 @@ export default function Navbar() {
               kids
             </NavLink>
           </li>
-          {/* <Footer /> */}
         </ul>
       </nav>
 
       <Link to="/" className={styles.headLink}>
         <h1 className={styles.title}>twelfth</h1>
       </Link>
-      {/* <h1 className={styles.title}>ModishTee</h1> */}
 
       <nav
         className={`${styles.navInfo} ${styles.rightNav}  ${
@@ -70,7 +65,6 @@ export default function Navbar() {
               setSearchResults={setSearchResults}
             />
           </div>
-          {/* <input type="text" placeholder="Search" /> */}
           <Link to="/signature" onClick={openMenu}>
             shop
           </Link>

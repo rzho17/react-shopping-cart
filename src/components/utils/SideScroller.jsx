@@ -1,4 +1,5 @@
 import styles from "./SideScroller.module.css";
+import PropTypes from "prop-types";
 
 export default function SideScroller({ text, text2 }) {
   return (
@@ -40,3 +41,8 @@ export default function SideScroller({ text, text2 }) {
     </div>
   );
 }
+
+SideScroller.propTypes = {
+  text: PropTypes.string.isRequired,
+  text2: PropTypes.string.isRequired,
+};

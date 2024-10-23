@@ -1,6 +1,6 @@
 import styles from "./MiniProduct.module.css";
-import { Link, Routes, Route } from "react-router-dom";
-import ProductPage from "../content/ProductPage";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function MiniProduct({
   func,
@@ -18,8 +18,6 @@ export default function MiniProduct({
       // holds state when clicking on the product to the product page
       state={{ item, img, name, price, func }}
     >
-      {/* <img src="../src/assets/react.svg" alt="" onClick={func} /> */}
-      {/* <img src={item.mainImg} alt="" onClick={func} /> */}
       <img src={img} alt="" onClick={func} />
       <div className={styles.productInfo}>
         <p>{name}</p>
@@ -28,3 +26,12 @@ export default function MiniProduct({
     </Link>
   );
 }
+
+MiniProduct.propTypes = {
+  func: PropTypes.func.isRequired,
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  container: PropTypes.string.isRequired,
+  item: PropTypes.object.isRequired,
+};

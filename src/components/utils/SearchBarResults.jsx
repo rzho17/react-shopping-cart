@@ -1,7 +1,6 @@
-import { useState } from "react";
-// import styles from "./SearchResults.module.css";
 import styles from "../Navbar.module.css";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function SearchBarResults({
   searchResults,
@@ -39,9 +38,12 @@ export default function SearchBarResults({
         </div>
       ) : null}
     </>
-    // <div className="">
-
-    // creates a div with all the results from the filtered search bar
-    // creates links and visuals to each product filtered
   );
 }
+
+SearchBarResults.propTypes = {
+  searchResults: PropTypes.array,
+  setMenuOpen: PropTypes.func.isRequired,
+  setInput: PropTypes.func.isRequired,
+  setSearchResults: PropTypes.func.isRequired,
+};

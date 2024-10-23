@@ -1,5 +1,6 @@
 import Button from "./Button";
 import styles from "../content/ProductPage.module.css";
+import PropTypes from "prop-types";
 
 export default function QuantityBtn({ name }) {
   return (
@@ -10,3 +11,7 @@ export default function QuantityBtn({ name }) {
     </div>
   );
 }
+
+QuantityBtn.propTypes = {
+  name: PropTypes.string.isRequired,
+};

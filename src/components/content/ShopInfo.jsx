@@ -10,6 +10,7 @@ export default function ShopInfo() {
     setWidth(window.innerWidth);
   };
 
+  // adds the handle resize and removes it on on page load
   useEffect(() => {
     window.addEventListener("resize", handleResize);
 
