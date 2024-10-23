@@ -34,9 +34,11 @@ export default function Cart() {
           // </tr>
           <div className={styles.title}>
             <p>ITEM</p>
-            <p>PRICE</p>
+            <p>NAME</p>
             <p>QUANTITY</p>
-            <p>TOTAL</p>
+            <p>PRICE</p>
+            <p></p>
+            {/* <p>TOTAL</p> */}
           </div>
         )}
 

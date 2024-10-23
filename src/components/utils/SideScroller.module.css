@@ -14,9 +14,10 @@
 .sideScroll h3 {
   padding: 1rem;
   color: var(--main-bg-color);
-  animation: RightToLeft 8s infinite linear;
+  animation: RightToLeft 6s linear infinite;
   text-wrap: nowrap;
   word-spacing: 0.8rem;
+  white-space: no-wrap;
 
   margin: 0;
 

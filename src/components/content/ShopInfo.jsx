@@ -44,8 +44,8 @@ export default function ShopInfo() {
         </div>
         {width > 768 ? (
           <div className={styles.header}>
-            <h2>Your Style</h2>
-            <h2>Stay Modish</h2>
+            <h2>elevate everyday</h2>
+            <h2>with twelfth</h2>
           </div>
         ) : null}
         <div className={styles.infoContainer}>

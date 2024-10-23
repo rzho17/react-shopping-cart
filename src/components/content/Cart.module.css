@@ -138,7 +138,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: left;
-    border-bottom: 1px solid rgb(195, 195, 195);
   }
 
   .remove {
@@ -149,5 +148,36 @@
     justify-content: space-between;
     /* flex-direction: row; */
     align-items: center;
+  }
+
+  .cartPage h2 {
+    position: static;
+    transform: none;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid var(--font-color);
+  }
+
+  .title p:nth-child(1) {
+    width: 128px;
+  }
+
+  .title p:nth-child(2) {
+    width: 200px;
+  }
+  .title p:nth-child(4) {
+    width: 86px;
+  }
+  .title p:nth-child(5) {
+    width: 50px;
+  }
+
+  .cartContainer {
+    padding: 1rem 0;
   }
 }

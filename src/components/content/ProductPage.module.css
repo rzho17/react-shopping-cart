@@ -169,7 +169,8 @@
     grid-template-columns: 1.5fr 1fr;
     gap: 1rem;
 
-    margin-top: 2rem;
+    padding: 2rem 5rem;
+    /* margin-top: 2rem; */
   }
 
   .imgContainer {
@@ -182,6 +183,7 @@
 
   .mainImg {
     flex: 1;
+    margin-top: 0;
   }
 
   .img {
@@ -190,18 +192,46 @@
 
   .infoContainer {
     margin: 0;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 0.5rem;
 
     align-items: normal;
   }
 
   .infoContainer h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  .infoContainer p {
+    font-size: 1rem;
   }
   .infoContainer h3 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+  }
+
+  .read {
+    font-size: 0.5rem;
+    padding: 0 0.5rem;
+    width: fit-content;
+  }
+
+  .quantityContainer {
+    width: 200px;
+    height: 40px;
+  }
+
+  .infoContainer .add {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    height: 50px;
   }
   .shippingInfo p {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .imgContainer {
   }
 }
