@@ -28,7 +28,7 @@ export default function MiniProduct({
 }
 
 MiniProduct.propTypes = {
-  func: PropTypes.func.isRequired,
+  func: PropTypes.func,
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,

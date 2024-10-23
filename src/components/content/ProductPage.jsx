@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export default function ProductPage() {
   const location = useLocation();
-  const { item, img, name, price, func } = location.state || {};
+  const { item } = location.state || {};
 
   const changeImg = (src, name) => {
     console.log(name);
@@ -131,7 +131,8 @@ export default function ProductPage() {
 
           <Button text={"add to cart"} name={styles.add} func={addCart} />
 
-          <div className={styles.shippingInfo}>
+          {/* optional delivery info */}
+          {/* <div className={styles.shippingInfo}>
             <DeliveryInfo
               containerName={styles.deliveryContainer}
               title={"Free Delivery"}
@@ -144,7 +145,7 @@ export default function ProductPage() {
               text={"Free 30 day Delivery Return"}
               icon={TbTruckReturn}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <SideScroller text="free delivery" text2="over $99 " />

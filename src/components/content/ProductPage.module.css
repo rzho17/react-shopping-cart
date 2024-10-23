@@ -209,14 +209,13 @@
 
   .quantityContainer {
     width: 200px;
-    height: 40px;
   }
 
   .infoContainer .add {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     width: 200px;
-    height: 50px;
+    height: 60px;
   }
   .shippingInfo p {
     margin: 0;
@@ -224,6 +223,11 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .productContainer {
+    grid-template-columns: 1fr 1fr;
+  }
   .imgContainer {
+    max-width: 600px;
+    justify-self: center;
   }
 }
