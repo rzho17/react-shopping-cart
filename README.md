@@ -1,8 +1,11 @@
-# React + Vite
+# React E-Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was made to practice my front end skills and to learn about using react router.
 
-Currently, two official plugins are available:
+All product information was taken from Uniqlo so all credit to them. The link to their website
+to purchase their products (I recommend it!) will be linked below.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+All stock photos are taken from unsplash
+
+- [Uniqlo](https://www.uniqlo.com/ca/en/) For all product information and data.
+- [Unsplash](https://unsplash.com/) For landing page stock photos
