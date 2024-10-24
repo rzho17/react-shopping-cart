@@ -107,7 +107,7 @@
 }
 
 .checkoutContainer .price {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   margin: 0;
 }
 
@@ -177,5 +177,9 @@
 @media screen and (min-width: 1000px) {
   .cartPage {
     padding: 4rem;
+  }
+
+  .checkoutContainer .price {
+    font-size: 2rem;
   }
 }

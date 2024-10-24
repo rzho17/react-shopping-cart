@@ -7,7 +7,7 @@
 }
 
 .productContainer {
-  padding: 1rem;
+  padding: 1rem 2rem;
   background-color: var(--second-bg-color);
 }
 
@@ -162,7 +162,7 @@
     grid-template-columns: 1.5fr 1fr;
     gap: 1rem;
 
-    padding: 2rem 5rem;
+    padding: 2rem;
   }
 
   .imgContainer {
